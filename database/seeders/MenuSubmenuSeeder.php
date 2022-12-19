@@ -15,7 +15,7 @@ class MenuSubmenuSeeder extends Seeder
      */
     public function run()
     {
-        DB::statement("SET FOREIGN_KEY_CHECKS=0;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=0");
         MenuSubmenu::truncate();
         DB::statement("INSERT INTO menu_submenu (id, judul_menu_menu_id, submenu_id, created_at, updated_at) VALUES
             (1, 1, 1, '2021-05-18 09:01:11', '2021-05-18 09:01:11'),
@@ -23,6 +23,6 @@ class MenuSubmenuSeeder extends Seeder
             (3, 1, 3, '2021-05-18 09:01:11', '2021-05-18 09:01:11'),
             (4, 1, 4, '2021-05-18 09:01:11', '2021-05-18 09:01:11')
         ;");
-        DB::statement("SET FOREIGN_KEY_CHECKS=1;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=1");
     }
 }

@@ -15,12 +15,12 @@ class JudulMenuSeeder extends Seeder
      */
     public function run()
     {
-        DB::statement("SET FOREIGN_KEY_CHECKS=0;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=0");
         JudulMenu::truncate();
         JudulMenu::create([
             'urutan'=> 1,
             'nama'  => 'Menu',
         ]);
-        DB::statement("SET FOREIGN_KEY_CHECKS=1;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=1");
     }
 }

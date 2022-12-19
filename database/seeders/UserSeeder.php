@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::statement("SET FOREIGN_KEY_CHECKS=0;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=0");
         User::truncate();
         User::create([
             'username'          => 'admin',
@@ -25,6 +25,6 @@ class UserSeeder extends Seeder
             'peran_id'          => 1,
             'data_pribadi_id'   => 1,
         ]);
-        DB::statement("SET FOREIGN_KEY_CHECKS=1;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=1");
     }
 }

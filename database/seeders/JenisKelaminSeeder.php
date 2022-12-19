@@ -15,10 +15,10 @@ class JenisKelaminSeeder extends Seeder
      */
     public function run()
     {
-        DB::statement("SET FOREIGN_KEY_CHECKS=0;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=0");
         JenisKelamin::truncate();
         JenisKelamin::create(['nama' => 'Laki-laki']);
         JenisKelamin::create(['nama' => 'Perempuan']);
-        DB::statement("SET FOREIGN_KEY_CHECKS=1;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=1");
     }
 }

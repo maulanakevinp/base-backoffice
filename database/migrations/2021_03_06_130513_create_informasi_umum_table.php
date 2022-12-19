@@ -13,9 +13,9 @@ class CreateInformasiUmumTable extends Migration
      */
     public function up()
     {
-        Schema::create('settings', function (Blueprint $table) {
+        Schema::create('informasi_umum', function (Blueprint $table) {
             $table->id();
-            $table->string('organization_name',128);
+            $table->string('nama_organisasi',128);
             $table->string('tax_id',16)->nullable();
             $table->string('nomor_registrasi',16)->nullable();
             $table->string('telepon',21)->nullable();

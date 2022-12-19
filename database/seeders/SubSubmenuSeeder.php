@@ -15,12 +15,12 @@ class SubSubmenuSeeder extends Seeder
      */
     public function run()
     {
-        DB::statement("SET FOREIGN_KEY_CHECKS=0;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=0");
         SubSubmenu::truncate();
         DB::statement("INSERT INTO sub_submenu (id, submenu_id, urutan, nama, url) VALUES
         (1, 1, 1, 'Pengguna', 'pengguna'),
         (2, 1, 2, 'Peran', 'peran'),
         (3, 2, 3, 'Informasi Umum', 'informasi-umum');");
-        DB::statement("SET FOREIGN_KEY_CHECKS=1;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=1");
     }
 }

@@ -15,10 +15,10 @@ class MenuSeeder extends Seeder
      */
     public function run()
     {
-        DB::statement("SET FOREIGN_KEY_CHECKS=0;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=0");
         Menu::truncate();
         DB::statement("INSERT INTO menu (id, judul_menu_id, urutan, nama, icon, url) VALUES
         (1, 1, 1, 'Admin', 'fas fa-user-cog', '#');");
-        DB::statement("SET FOREIGN_KEY_CHECKS=1;");
+        DB::statement("SET FOREIGN_KEY_CHECKS=1");
     }
 }
