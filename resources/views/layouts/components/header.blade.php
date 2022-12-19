@@ -5,7 +5,7 @@
             <!-- ========   change your logo hear   ============ -->
             <div class="dflex justify-content-around">
                 <img height="30px" src="{{ url('') }}/assets/images/72x72.png" alt="" class="logo">
-                <span class="font-weight-bold h5">Resto Jember</span>
+                <span class="font-weight-bold h5">{{ config('app.name') }}</span>
             </div>
         </a>
         <a href="#!" class="mob-toggler">
